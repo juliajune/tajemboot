@@ -1,0 +1,20 @@
+//when we hover to an element, it overlaps with color
+//$color - element HEX color (like #333) is converted to RBGA
+//$opacity  element color opacity
+
+@mixin item-hover-overlay($color: #000, $opacity: 0.5, $transition-speed: 0.5s) 
+	position: relative
+	
+	&:before
+		content: " "
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		background: transparent
+		transition: all $transition-speed
+		z-index: 999
+	&:hover
+		&:before
+			background: rgba($color, $opacity)

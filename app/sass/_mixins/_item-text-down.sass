@@ -1,0 +1,20 @@
+//when we hover to an element, it overlaps with color
+//$color - element HEX color (like #333) is converted to RBGA
+//$opacity  element color opacity
+
+@mixin item-text-down() 
+	position: absolute
+	left: 0
+	right: 0
+	padding: 1.25rem 0.625rem
+	opacity: 0
+	width: 100%
+	bottom: 100%
+	text-align: center
+	transition: all .5s
+	z-index: 100000
+	&:hover
+		opacity: 1
+		bottom: 50%
+		transform: translateY(50%)
+	
