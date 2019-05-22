@@ -508,5 +508,36 @@ header
 	    text-align: center
 	    opacity: .5
 	    transition: opacity .15s ease
+	    background-color: red
 		
+//Slick slider for testimonials
+.slick-track
+	display: flex
+	align-items: center
 
+.slider
+    width: 24%
+    margin: 100px auto
+
+.slick-slide
+	margin: 0px 8px
+	
+
+.testimonials-slider_slide
+	img
+		height: 46px
+		width: 46px
+		border-radius: 50%
+
+.slick-current
+	.testimonials-slider_slide
+		img
+			height: 70px
+			width: 70px
+			border-radius: 50%
+
+.slick-prev:before,.slick-next:before
+	color: black
+  
+  
+@import "media"

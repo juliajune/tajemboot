@@ -142,50 +142,9 @@ h2::after {
 </style>
 <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css">
-  <style type="text/css">
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
+  
 
-    * {
-      box-sizing: border-box;
-    }
-
-    .slider {
-        width: 50%;
-        margin: 100px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
-
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-
-    .slick-active {
-      opacity: .5;
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
-  </style>
-
-
+<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
@@ -665,13 +624,12 @@ h2::after {
 	<section  id="testimonials"  class="testimonials section section__dark">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-10 col-lg-10 col-md-10 offset-xl-1 offset-lg-1 offset-md-1  text-center col-sm-12
-
-
-				">
+				<div class="col-xl-10 col-lg-10 col-md-10 offset-xl-1 offset-lg-1 offset-md-1  text-center col-sm-12">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
 						<!-- Carousel indicators -->
 						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="1"><img src="img/girl3.jpg" alt=""></li>
+							<li data-target="#myCarousel" data-slide-to="2"><img src="img/girl2.jpg" alt=""></li>
 							<li data-target="#myCarousel" data-slide-to="0" class="active"><img src="img/girl1.jpg" alt=""></li>
 							<li data-target="#myCarousel" data-slide-to="1"><img src="img/girl3.jpg" alt=""></li>
 							<li data-target="#myCarousel" data-slide-to="2"><img src="img/girl2.jpg" alt=""></li>
@@ -696,23 +654,35 @@ h2::after {
 								</p>
 								<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
 							</div>
+							<div class="item carousel-item">
+								<p class="testimonial">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+								</p>
+								<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+							</div>
+							<div class="item carousel-item">
+								<p class="testimonial">
+									This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+								</p>
+								<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+							</div>
 						</div>
 						<!-- Carousel controls -->
 						<a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
 							<i class="fa fa-angle-left"></i>
 							<div class="image-one">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="21" viewBox="0 0 11 21">
-  <image id="back" width="11" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAVCAQAAAA6edxGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBRUQOBjr9myMAAAAbUlEQVQY03WQOw5AUBBFD2JFIn61zrpVXhCFBeitQHJVijfPTHnm5mTmZqQzUaVwQJx/cKGMYYvYyWNYIw6yGDaI1To7RLCwRwTrHBCbdY6I2SbhQSl0047bvcS92/3S7cRt0O37W5xFgi8C9wtWZCnNKaICsgAAAABJRU5ErkJggg=="/>
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="21" viewBox="0 0 11 21">
+									  <image id="back" width="11" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAVCAQAAAA6edxGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBRUQOBjr9myMAAAAbUlEQVQY03WQOw5AUBBFD2JFIn61zrpVXhCFBeitQHJVijfPTHnm5mTmZqQzUaVwQJx/cKGMYYvYyWNYIw6yGDaI1To7RLCwRwTrHBCbdY6I2SbhQSl0047bvcS92/3S7cRt0O37W5xFgi8C9wtWZCnNKaICsgAAAABJRU5ErkJggg=="/>
 
-</svg>
-</div>
+								</svg>
+							</div>
 
 						</a>
-						<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
-							<i class="fa fa-angle-right"></i>
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="21" viewBox="0 0 11 21">
-  <image id="forward" width="11" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAVCAQAAAA6edxGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBRUQIhhb25ZXAAAAbUlEQVQY042Ruw2EQBBDH7/wykEcEFPXtUMjELHiEAEStSCZnPVKOLRHY4+n4MeHkwgHoo/pisULORviGwsZO6LGYEU0TgiI1nkEROc8/qlUM2JwgrheTdvdiSQ2t7nSdmIbTPRtv1MyEpie9A08QCpT9w9rygAAAABJRU5ErkJggg=="/>
-</svg>
+									<a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+										<i class="fa fa-angle-right"></i>
+										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="21" viewBox="0 0 11 21">
+			  <image id="forward" width="11" height="21" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAVCAQAAAA6edxGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBRUQIhhb25ZXAAAAbUlEQVQY042Ruw2EQBBDH7/wykEcEFPXtUMjELHiEAEStSCZnPVKOLRHY4+n4MeHkwgHoo/pisULORviGwsZO6LGYEU0TgiI1nkEROc8/qlUM2JwgrheTdvdiSQ2t7nSdmIbTPRtv1MyEpie9A08QCpT9w9rygAAAABJRU5ErkJggg=="/>
+			</svg>
 
 						</a>
 					</div>
@@ -722,35 +692,28 @@ h2::after {
 	</section>
 	<!-- /TESTIMONIALS SLIDER -->
 <!------------------------------------>
-<section class="center slider">
-    <div>
-      <img src="http://placehold.it/350x300?text=1">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=2">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=3">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=4">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=5">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=6">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=7">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=8">
-    </div>
-    <div>
-      <img src="http://placehold.it/350x300?text=9">
-    </div>
-  </section>
+<section>
+	<!--
+	<div class="testimonials_slider-for slider-for slider">
+	    <div class="slider-for_slide"><img src="img/girl1.jpg" alt=""></div>
+	    <div class="slider-for_slide"><img src="img/girl2.jpg" alt=""></div>
+	    <div class="slider-for_slide"><img src="img/girl3.jpg" alt=""></div>
+	    <div class="slider-for_slide"><img src="img/girl2.jpg" alt=""></div>
+	    <div class="slider-for_slide"><img src="img/girl1.jpg" alt=""></div>
+	    <div class="slider-for_slide"><img src="img/girl3.jpg" alt=""></div>
+	</div>	
+-->
+	<div class="testimonials-slider slider">
+	    <div class="testimonials-slider_slide"><img src="img/girl1.jpg" alt=""></div>
+	    <div class="testimonials-slider_slide"><img src="img/girl2.jpg" alt=""></div>
+	    <div class="testimonials-slider_slide"><img src="img/girl3.jpg" alt=""></div>
+	    <div class="testimonials-slider_slide"><img src="img/girl2.jpg" alt=""></div>
+	    <div class="testimonials-slider_slide"><img src="img/girl1.jpg" alt=""></div>
+	    <div class="testimonials-slider_slide"><img src="img/girl3.jpg" alt=""></div>
+	</div>	
+</section>
+
+
 <!------------------------------------>
 
 
@@ -817,13 +780,36 @@ h2::after {
   <script type="text/javascript">
     
      
-      $(".center").slick({
-        dots: true,
+      $(".testimonials-slider").slick({
+      	centerMode: true,
+  		//centerPadding: '50%',
+        dots: false,
         infinite: true,
         centerMode: true,
         slidesToShow: 5,
-        slidesToScroll: 5
+        slidesToScroll: 1,
+        variableWidth: true,
+        focusOnSelect: true
+
       });
+      
+      /*
+	$('.slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.slider-nav'
+	});
+	$('.testimonials').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.slider-for',
+		dots: false,
+		centerMode: true,
+		focusOnSelect: true
+	});
+	*/
       
 </script>
 

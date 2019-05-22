@@ -5,11 +5,14 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+	.slider
+		background-color: red
 	
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
+	
 
 }
 
