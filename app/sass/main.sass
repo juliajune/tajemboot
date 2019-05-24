@@ -539,5 +539,64 @@ header
 .slick-prev:before,.slick-next:before
 	color: black
   
-  
+
+
+/***** CONTACT FORM *****/
+
+
+%fields
+	font-family: $font-family-main
+	font-size: $font-size-text
+	color: $text-color-main
+	width: 100%
+	padding: 10px 20px 10px 20px
+	border: 1px solid $border-color
+	outline: none
+	&:focus
+		outline: none /*убираем дополнительную обводку браузера*/
+		border: 1px solid $dark-color
+		
+	&:focus::placeholder
+		opacity: 0
+	&::placeholder
+		font-family: $font-family-light
+		font-size: $font-size-text
+		color: $border-color
+		opacity: 1
+		transition: .3s linear
+
+.data-field
+	@extend %fields	
+.data-textarea
+	@extend %fields
+	height: 200px
+	resize: none /* Запрещаем изменять размер */
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active 
+	-webkit-box-shadow: 10px 10px 10px 30px $text-color-secondary inset !important
+
+input:-webkit-autofill 
+	-webkit-text-fill-color:  $text-color-main !important
+
+
+.contact-form__line
+	margin-bottom: 23px
+
+
+.section__title
+	margin-bottom: 30px
+
+
+/***** FOOTER *****/
+.footer
+	background: $dark-color url(../img/footer-bg.jpg) top center no-repeat
+	background-size: cover
+
+
+
+
 @import "media"
