@@ -48,6 +48,8 @@ nav
 		background-image: -ms-linear-gradient( 0deg, rgba(9,5,47,0.5) 0%, rgba(49,29,94,0.5) 100%)
 		//opacity: 0.8
 		//z-index: 1 
+	& h1, h2, h3, h4, h5, a
+		color: $light-color
 
 
 .section__light	
@@ -286,13 +288,14 @@ header
 .social-menu
 	display: flex
 	width: 100%
-	justify-content: center
-	&_link
+	&_center
+		justify-content: center
+	&__link
 		color: $light-color
 		display: inline-block
 		width: 2.1875rem //35px
 		height: 2.1875rem //35px
-		border: 2px $light-color solid
+		border: 1px $light-color solid
 		border-radius: 2.1875rem //35px
 		font-size: $font-size-text
 		background-color: transparent
@@ -301,7 +304,7 @@ header
 		justify-content: center
 		align-items: center
 		text-decoration: none
-		margin-right: 0.625rem //10px
+		margin-right: 0.5rem //8px
 
 		&:last-child
 			margin-right: 0px
@@ -309,7 +312,7 @@ header
 		&:hover
 			color: $text-color-main
 			background-color: $light-color
-			border: 2px $light-color solid
+			border: 1px $light-color solid
 			text-decoration: none
 	
 .join-us
@@ -554,8 +557,7 @@ header
 	outline: none
 	&:focus
 		outline: none /*убираем дополнительную обводку браузера*/
-		border: 1px solid $dark-color
-		
+		border: 1px solid $dark-color		
 	&:focus::placeholder
 		opacity: 0
 	&::placeholder
@@ -595,8 +597,78 @@ input:-webkit-autofill
 .footer
 	background: $dark-color url(../img/footer-bg.jpg) top center no-repeat
 	background-size: cover
+	//height: 50vh
+
+.footer-bottom
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+	&__left-content
+
+
+	&__right-content
+
+/**** FOOTER. Subscribe form ******/
+.subscribe-form__field
+	color: $light-color
+	border: 1px solid rgba(255, 255, 255, 0.5)
+	background-color: transparent
+	padding: 10px 20px 10px 20px
+	outline: none
+	&:focus
+		outline: none /*убираем дополнительную обводку браузера*/
+	&:focus::placeholder
+		opacity: 0
+	&::placeholder
+		font-family: $font-family-light
+		font-size: $font-size-text
+		color: rgba(255, 255, 255, 0.5)
+		opacity: 1
+		transition: .3s linear
+
+button.subscribe-form__submit
+	//background-image: url(../img/paper.svg)
+	background: rgba(255, 255, 255, 0.5) url(../img/icons/paperplan.svg) no-repeat center center
+	background-size: 20px 20px
+	padding: 11px 22px 11px 22px
+	text-indent: -9999px
+	font-size: $font-size-text
+	color: $text-color-main
+	outline: none
+	border: 0px
+	
+	&:focus
+		outline: none /*убираем дополнительную обводку браузера*/
+	&:hover
+		cursor: pointer
+
+//Widget
+
+.widget
+	margin-bottom: 1.875rem //30px
+	&__title
+		font-size: $font-size-h4
+		family: $font-family-main-bold
+		color: $header-color
+		line-height: $line-height-header
+		text-transform: uppercase
+		margin-bottom: 1.875rem //30px
+	&__item
+		margin-bottom: 0.9375rem //15px
+	
 
 
 
+
+//Widget Addres
+.widget-address
+	&__item
+		display: flex
+		flex-wrap: nowrap
+
+	&__icon
+		font-size: $font-size-icon
+		margin-right: 13px
 
 @import "media"
