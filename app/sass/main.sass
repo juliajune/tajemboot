@@ -1,3 +1,4 @@
+@import "reset"
 @import "vars"
 @import "fonts"
 //@import "ourvariables"
@@ -597,20 +598,32 @@ input:-webkit-autofill
 .footer
 	background: $dark-color url(../img/footer-bg.jpg) top center no-repeat
 	background-size: cover
-	//height: 50vh
+	
+.footer-top
+	margin-bottom: 40px
 
 .footer-bottom
-	display: flex
-	flex-wrap: wrap
-	justify-content: space-between
-
+	padding: 0 25px
 	&__left-content
-
-
+		width: 100%
+		text-align: left
 	&__right-content
+		width: 100%
+		text-align: right
+	&__menu
+		ul
+			li
+				display: inline-block
+				margin-right: 1.875rem //30px
+				text-transform: uppercase
+
 
 /**** FOOTER. Subscribe form ******/
+
+.subscribe-form
+	width: 100%
 .subscribe-form__field
+	width: 85%
 	color: $light-color
 	border: 1px solid rgba(255, 255, 255, 0.5)
 	background-color: transparent
@@ -628,6 +641,7 @@ input:-webkit-autofill
 		transition: .3s linear
 
 button.subscribe-form__submit
+	width: 13%
 	//background-image: url(../img/paper.svg)
 	background: rgba(255, 255, 255, 0.5) url(../img/icons/paperplan.svg) no-repeat center center
 	background-size: 20px 20px
@@ -637,16 +651,24 @@ button.subscribe-form__submit
 	color: $text-color-main
 	outline: none
 	border: 0px
+	transition: .3s linear
 	
 	&:focus
 		outline: none /*убираем дополнительную обводку браузера*/
 	&:hover
 		cursor: pointer
+		background-color: $light-color
+
+/**** FOOTER. Bottom menu ******/
+
+
+
+
 
 //Widget
 
 .widget
-	margin-bottom: 1.875rem //30px
+	padding: 20px 15px 15px 15px//1.875rem //30px
 	&__title
 		font-size: $font-size-h4
 		family: $font-family-main-bold
@@ -654,8 +676,11 @@ button.subscribe-form__submit
 		line-height: $line-height-header
 		text-transform: uppercase
 		margin-bottom: 1.875rem //30px
-	&__item
-		margin-bottom: 0.9375rem //15px
+		//padding-top: 20px
+	ul
+		li
+			display: block
+			margin-bottom: 0.9375rem //15px
 	
 
 
@@ -670,5 +695,12 @@ button.subscribe-form__submit
 	&__icon
 		font-size: $font-size-icon
 		margin-right: 13px
+
+
+//logo
+.logo
+	display: inline-block
+	width: 130px
+	height: 50px
 
 @import "media"
