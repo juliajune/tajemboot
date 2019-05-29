@@ -515,16 +515,17 @@ header
 	    background-color: red
 		
 //Slick slider for testimonials
-.slick-track
-	display: flex
-	align-items: center
+.testimonials
+	.slick-track
+		display: flex
+		align-items: center
 
-.slider
-    width: 24%
-    margin: 100px auto
+	.slider
+	    width: 24%
+	    margin: 100px auto
 
-.slick-slide
-	margin: 0px 8px
+	.slick-slide
+		margin: 0px 8px
 	
 
 .testimonials-slider_slide
@@ -544,21 +545,21 @@ header
 	color: black
   
 
+/***** CONTACT SECTION *****/
+/*** CONTACT FORM ***/
 
-/***** CONTACT FORM *****/
-
-
+/** Input, textarea fields **/
 %fields
 	font-family: $font-family-main
 	font-size: $font-size-text
 	color: $text-color-main
 	width: 100%
-	padding: 10px 20px 10px 20px
+	padding: 0.625rem 20px 0.625rem 20px
 	border: 1px solid $border-color
 	outline: none
 	&:focus
 		outline: none /*убираем дополнительную обводку браузера*/
-		border: 1px solid $dark-color		
+		border: 1px solid #00e0d0		
 	&:focus::placeholder
 		opacity: 0
 	&::placeholder
@@ -567,41 +568,51 @@ header
 		color: $border-color
 		opacity: 1
 		transition: .3s linear
-
 .data-field
 	@extend %fields	
 .data-textarea
 	@extend %fields
 	height: 200px
-	resize: none /* Запрещаем изменять размер */
-
-/* Change the white to any color ;) */
+	resize: none /* forbid resize fields */
+/* Change Chome brauser default field color */
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active 
 	-webkit-box-shadow: 10px 10px 10px 30px $text-color-secondary inset !important
-
 input:-webkit-autofill 
 	-webkit-text-fill-color:  $text-color-main !important
-
+/* /Change Chome brauser default field color */
+/** /Input, textarea fields **/
 
 .contact-form__line
-	margin-bottom: 23px
-
+	margin-bottom: 1.5625rem //25px
 
 .section__title
-	margin-bottom: 30px
+	margin-bottom: 1.875rem //30px
 
+/*** OUR CLIENTS. Clients carousel ***/
+.our-clients
+	.slick-slide 
+		div
+			display: flex
+			align-items: center
+			justify-content: center
+	.client	
+		//text-align: center
+		margin-bottom: 35px
+/*** /OUR CLIENTS. Clients carousel ***/		
+		
+	
 
-/***** FOOTER *****/
+/***** FOOTER. General rules *****/
 .footer
 	background: $dark-color url(../img/footer-bg.jpg) top center no-repeat
 	background-size: cover
-	
+/*** Footer top widget area ***/	
 .footer-top
 	margin-bottom: 40px
-
+/*** Footer bottom widget area ***/
 .footer-bottom
 	padding: 0 25px
 	&__left-content
@@ -616,33 +627,32 @@ input:-webkit-autofill
 				display: inline-block
 				margin-right: 1.875rem //30px
 				text-transform: uppercase
+/***** /FOOTER *****/
 
-
-/**** FOOTER. Subscribe form ******/
-
+/**** FOOTER TOP ****/
+/*** Subscribe form widget ***/
 .subscribe-form
 	width: 100%
-.subscribe-form__field
-	width: 85%
-	color: $light-color
-	border: 1px solid rgba(255, 255, 255, 0.5)
-	background-color: transparent
-	padding: 10px 20px 10px 20px
-	outline: none
-	&:focus
-		outline: none /*убираем дополнительную обводку браузера*/
-	&:focus::placeholder
-		opacity: 0
-	&::placeholder
-		font-family: $font-family-light
-		font-size: $font-size-text
-		color: rgba(255, 255, 255, 0.5)
-		opacity: 1
-		transition: .3s linear
+	&__field
+		width: 85%
+		color: $light-color
+		border: 1px solid rgba(255, 255, 255, 0.5)
+		background-color: transparent
+		padding: 10px 20px 10px 20px
+		outline: none
+		&:focus
+			outline: none /*убираем дополнительную обводку браузера*/
+		&:focus::placeholder
+			opacity: 0
+		&::placeholder
+			font-family: $font-family-light
+			font-size: $font-size-text
+			color: rgba(255, 255, 255, 0.5)
+			opacity: 1
+			transition: .3s linear
 
 button.subscribe-form__submit
 	width: 13%
-	//background-image: url(../img/paper.svg)
 	background: rgba(255, 255, 255, 0.5) url(../img/icons/paperplan.svg) no-repeat center center
 	background-size: 20px 20px
 	padding: 11px 22px 11px 22px
@@ -658,10 +668,11 @@ button.subscribe-form__submit
 	&:hover
 		cursor: pointer
 		background-color: $light-color
+/*** /Subscribe form widget ***/
+
+
 
 /**** FOOTER. Bottom menu ******/
-
-
 
 
 
@@ -682,9 +693,6 @@ button.subscribe-form__submit
 			display: block
 			margin-bottom: 0.9375rem //15px
 	
-
-
-
 
 //Widget Addres
 .widget-address
