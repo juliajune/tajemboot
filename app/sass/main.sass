@@ -515,35 +515,71 @@ header
 	    background-color: red
 		
 //Slick slider for testimonials
-.testimonials
-	.slick-track
-		display: flex
-		align-items: center
-
+.testimonials-slider
 	.slider
-	    width: 24%
-	    margin: 100px auto
+		width: 24%
+		margin: 100px auto
 
 	.slick-slide
 		margin: 0px 8px
-	
 
-.testimonials-slider_slide
-	img
-		height: 46px
-		width: 46px
-		border-radius: 50%
-
-.slick-current
 	.testimonials-slider_slide
 		img
-			height: 70px
-			width: 70px
+			height: 46px
+			width: 46px
 			border-radius: 50%
 
-.slick-prev:before,.slick-next:before
-	color: black
+	.slick-current
+		.testimonials-slider_slide
+			img
+				height: 70px
+				width: 70px
+				border-radius: 50%
+
+	.slick-prev:before,.slick-next:before
+		color: black
   
+/////////////////////////////////////////////////
+.testimonials__slider-nav
+	.slider 
+		//width: 50%
+	    //margin: 100px auto
+
+	.slick-slide 
+		margin: 0px 8px
+
+	.slick-slide img 
+		width: 100%
+
+	.slick-track
+		display: flex
+		align-items: center
+		//transition: all ease-in-out 500s
+
+	.slick-prev:before,
+	.slick-next:before 
+		color: white
+
+	.slick-slide 
+		//transition: all ease-in-out .5s
+		//opacity: .2
+
+	.slick-active 
+		//opacity: .5
+
+	.testimonials-slider_slide
+		img
+			height: 46px
+			width: 46px
+			border-radius: 50%
+
+	.slick-current 
+		//opacity: 1
+		.testimonials-slider_slide
+			img
+				height: 70px
+				width: 70px
+				border-radius: 50%
 
 /***** CONTACT SECTION *****/
 /*** CONTACT FORM ***/
